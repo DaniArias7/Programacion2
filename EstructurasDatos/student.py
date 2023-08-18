@@ -1,10 +1,10 @@
 class Student:
-    def __init__(self, name, age, grades=[]):
+    def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
-        self.grades = grades
+        self.grades = []
 
-    def add_grade(self, grade):
+    def add_grade(self, grade: float):
         self.grades.append(grade)
 
     def average_grade(self):
